@@ -1,6 +1,30 @@
 # Wildlife Tracker App 🦁🌿
 
-Welcome to the Wildlife Tracker App! 
+Welcome to the Wildlife Tracker App! Live at: https://cosmasnyairo.github.io/wildlife-tracker 🚀
+
+Download the project locally and run the following commands:
+
+```
+  npm install
+```
+```
+  npm build:css
+```
+
+```
+  npm start
+```
+
+
+Screenshots:
+
+![Alt text](screenshots/Animals.png) 
+
+![Alt text](screenshots/EndangeredAnimals.png) 
+
+![Alt text](screenshots/home.png) 
+
+![Alt text](screenshots/Sightings.png)
 
 The app is built using React and styled with Tailwind CSS.
 
@@ -8,8 +32,6 @@ The app uses the following fonts:
 
 - **Heading Font**: Montserrat
 - **Body Font**: Raleway
- 
-
 
 ## Getting Started
 
