@@ -1,0 +1,24 @@
+name: Wildlife tracker CI/CD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run : npm ci
+
+      - name: Production build & purge tailwind css
+        run : npm run prod:build
+
+      - name: Deploy to github page
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-page
+          folder: build

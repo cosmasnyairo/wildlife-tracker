@@ -1,0 +1,47 @@
+{
+  "name": "wildlife-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "",
+  "description": "Wildlife tracker",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "postcss": "^8.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "tailwindcss": "^2.1.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "predeploy": "npm run prod:build",
+    "deploy": "gh-pages -b gh-page -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "prod:build": "NODE_ENV=production npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "tailwindcss build src/styles/tailwind.css -o src/styles/style.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
